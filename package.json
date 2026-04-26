@@ -1,0 +1,31 @@
+{
+  "name": "duck-db-orm",
+  "version": "0.1.0",
+  "description": "TypeScript DuckDB ORM-style wrapper with schema derivation and optional spatial support",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node scripts/run-tests.mjs",
+    "test:vitest": "vitest run --pool=threads --maxWorkers=1"
+  },
+  "keywords": [
+    "duckdb",
+    "typescript",
+    "orm",
+    "spatial"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@duckdb/node-api": "^1.5.2-r.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.4"
+  }
+}

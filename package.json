@@ -12,7 +12,8 @@
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
     "test": "npm run build && node scripts/run-tests.mjs",
-    "test:vitest": "vitest run --pool=threads --maxWorkers=1"
+    "test:vitest": "vitest run --pool=threads --maxWorkers=1",
+    "demo": "npm run build && node examples/demo-client.mjs"
   },
   "keywords": [
     "duckdb",

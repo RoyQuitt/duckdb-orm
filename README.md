@@ -64,3 +64,14 @@ const nearby = await db.select(
   }
 );
 ```
+
+## Demo Client
+
+Run a local demo that shows:
+- automatic schema derivation + insert/select
+- transaction usage
+- optional spatial flow (skips if extension is unavailable)
+
+```bash
+npm run demo
+```
